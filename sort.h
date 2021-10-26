@@ -31,5 +31,7 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 /* sorts an array of int in ascending order with Shell sort algorithm */
 void shell_sort(int *array, size_t size);
+/* sorts an array of int in ascending order with counting sort algorithm */
+void counting_sort(int *array, size_t size);
 
 #endif
