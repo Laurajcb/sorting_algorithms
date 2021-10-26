@@ -29,5 +29,7 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 /* sorts an array of int in ascending order with Quick sort algorithm */
 void quick_sort(int *array, size_t size);
+/* sorts an array of int in ascending order with Shell sort algorithm */
+void shell_sort(int *array, size_t size);
 
 #endif
