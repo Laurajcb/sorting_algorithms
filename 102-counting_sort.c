@@ -11,7 +11,7 @@ void counting_sort(int *array, size_t size)
 {
 	int i = 0, tmp_size = (int)size;
 	unsigned int tmp = 0, tmp2 = 0;
-	int *aux_array, *new_array, max = 0;
+	int *aux_array = NULL, *new_array = NULL, max = 0;
 
 	if (size < 2 || array == NULL)
 		return;
@@ -40,6 +40,7 @@ void counting_sort(int *array, size_t size)
 	{
 		tmp2 = array[i];
 		new_array[aux_array[tmp2] - 1] = tmp2;
+		aux_array[tmp2]--;
 	}
 	for (i = 0; i < tmp_size; i++)
 		array[i] = new_array[i];
